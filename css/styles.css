@@ -1,0 +1,20 @@
+/* меняет цвет текста*/
+.test-link {
+    color: black;
+}
+/* при наведении меняет цвет текста,
+ при tab нажатии и выборе меняет цвет*/
+.test-link:hover,
+.test-link:focus {
+    /* color: tomato; */
+    color: #ff0000;
+}
+/* меняет цвет страницы */
+body {
+    background-color: gray;
+}
+/* при зажатии меняет цвет */
+.test-link:active {
+    color: teal;
+}
+
