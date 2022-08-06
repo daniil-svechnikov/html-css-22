@@ -1,15 +1,21 @@
-/* меняет цвет текста*/
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: #000000;
+    --akcent-text-color: #18A0FB;
+    --primary-bg-color: #FFFFFF
+}
+/* меняет цвет текста
 .test-link {
     color: black;
 }
 /* при наведении меняет цвет текста,
  при tab нажатии и выборе меняет цвет*/
-.test-link:hover,
+/* .test-link:hover,
 .test-link:focus {
-    /* color: tomato; */
+    /* color: tomato; 
     color: #ff0000;
 }
-/* меняет цвет страницы */
+/* меняет цвет страницы 
 body {
     background-color: gray;
 }
@@ -17,4 +23,76 @@ body {
 .test-link:active {
     color: teal;
 }
+ 
 
+ /* цвет основнова текста #000000 */
+ /* вторичный цвет текста rgba(0, 0, 0, 0.8) */
+ /* белый текст #FFFFFF */
+ /* акцент #18A0FB */
+ /* вторичный цвет фона #F5F5F5 */
+
+ .body {
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+ }
+ 
+ ul {
+    list-style: none;
+ }
+ .logo {
+    color: var(--title-text-color);
+ }
+
+ .logo:hover,
+ .logo:focus {
+    color: var(--akcent-text-color);
+ }
+
+.site-nav .link {
+    color: var(--akcent-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--title-text-color);
+}
+
+.site-nav .link.current{
+    color: var(--title-text-color);
+}
+
+.hero .hero-title {
+    color: var(--title-text-color);
+}
+
+.section .section-title {
+    color: var(--title-text-color);
+}
+
+.futures .title {
+    color: var(--primary-text-color);
+}
+
+.fon {
+    background-color: #F5F5F5;
+}
+
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-color);
+}
+
+.button.primary {
+    background-color: var(--akcent-text-color);
+    color: var(--primary-bg-color);
+}
+
+.button.secondary {
+    color: var(--akcent-text-color);
+    background-color: var(--primary-bg-color);
+}
+
+.now:hover,
+.now:focus {
+    color: var(--title-text-color);
+}
